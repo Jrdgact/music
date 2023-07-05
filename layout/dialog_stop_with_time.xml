@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rest_of_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/rest_of_time"
+        android:textSize="@dimen/sp_20" />
+
+    <EditText
+        android:id="@+id/input_time"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/btn_rounded_corner_black_stroke"
+        android:inputType="number"
+        android:hint="@string/time_hint"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_20">
+
+        <Button
+            android:id="@+id/btn_time_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_ok"
+            android:background="@drawable/btn_rounded_corner_black_stroke"/>
+
+        <Button
+            android:id="@+id/btn_time_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_time_ok"
+            android:layout_marginStart="@dimen/dp_20"
+            android:text="@string/task_cancel"
+            android:background="@drawable/btn_rounded_corner_black_stroke"/>
+    </RelativeLayout>
+
+</LinearLayout>
